@@ -111,7 +111,7 @@ const InternalAssessment = () => {
           </section>
         </main>
 
-        <footer className="erp-footer">Copyright © 2026. All rights reserved by UniOne ERP Solutions.</footer>
+        <footer className="erp-footer">Copyright © 2026. All rights reserved by Ayush Kumar.</footer>
       </div>
     </div>
   );
