@@ -9,7 +9,7 @@ import './styles.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sample-erp-">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
