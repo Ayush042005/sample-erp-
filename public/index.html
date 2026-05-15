@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivaji College ERP - Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="login-body">
+  <main class="login-page">
+    <section class="login-card" aria-label="Shivaji College ERP login">
+      <div class="college-seal" aria-hidden="true">
+        <img src="" alt="" />
+        <span class="material-symbols-outlined">account_balance</span>
+      </div>
+      <h1>SHIVAJI COLLEGE</h1>
+      <p class="login-subtitle">Student Portal Login</p>
+
+      <form class="login-form">
+        <label for="user-id">User Id</label>
+        <div class="field-shell">
+          <span class="material-symbols-outlined" aria-hidden="true">person</span>
+          <input id="user-id" name="user-id" type="text" autocomplete="username" autofocus />
+        </div>
+
+        <label for="password">Password</label>
+        <div class="field-shell">
+          <span class="material-symbols-outlined" aria-hidden="true">lock</span>
+          <input id="password" name="password" type="password" autocomplete="current-password" />
+        </div>
+
+        <a class="forgot-link" href="#">Forgot Password ?</a>
+        <button class="primary-button" type="button" id="sign-in">
+          <span>Sign in</span>
+          <span class="material-symbols-outlined" aria-hidden="true">login</span>
+        </button>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

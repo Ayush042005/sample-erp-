@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard - Shivaji College ERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="erp-layout">
+      <aside class="erp-sidebar">
+        <a class="side-brand" href="student-dashboard.html">
+          <span class="mini-seal">AK</span>
+          <span>
+            <strong>Student Portal</strong>
+            <small>Academic Session 2025-26</small>
+          </span>
+        </a>
+        <nav class="side-nav">
+          <a class="active" href="attendance.html"><span class="material-symbols-outlined">calendar_today</span> Step 2 - Attendance</a>
+          <a href="subjects.html"><span class="material-symbols-outlined">menu_book</span> Subjects</a>
+          <a href="internal-assessment.html"><span class="material-symbols-outlined">grade</span> View IA Marks</a>
+        </nav>
+      </aside>
+
+      <div class="erp-main">
+        <header class="erp-topbar">
+          <a class="back-link" href="index.html" aria-label="Back to login">Back</a>
+          <div class="top-title">Shivaji College</div>
+          <div class="top-actions">
+            <button type="button" aria-label="Notifications"><span class="material-symbols-outlined">notifications</span></button>
+            <button type="button" aria-label="Settings"><span class="material-symbols-outlined">settings</span></button>
+            <strong>Ayush Kumar</strong>
+          </div>
+        </header>
+
+        <main class="student-content">
+          <div class="page-kicker">
+            <h2>Welcome back, Ayush</h2>
+            <p>Here is your academic overview for today.</p>
+          </div>
+          <section class="student-panel">
+            <div class="student-profile">
+              <span class="profile-avatar">AK</span>
+              <h1>Ayush Kumar</h1>
+              <p>Course : B.Com (Hons.) | Designation: Student</p>
+              <p>College Roll No. - 24/51020 | Examination Roll No. - 24071504001</p>
+              <div class="tic-line">
+                <span class="person-icon"></span>
+                Department Teacher-in-Charge (TIC): <strong>Not Updated</strong>
+              </div>
+            </div>
+
+            <div class="stat-grid">
+              <a class="stat-tile" href="attendance.html">
+                <span class="tile-icon material-symbols-outlined">school</span>
+                <strong>0 Classes Today</strong>
+              </a>
+              <a class="stat-tile" href="attendance.html">
+                <span class="tile-icon material-symbols-outlined">analytics</span>
+                <strong>Overall Attendance : 36.47%</strong>
+                <small>Relaxation Applied (If any)</small>
+              </a>
+              <a class="stat-tile" href="internal-assessment.html">
+                <span class="tile-icon material-symbols-outlined">assignment</span>
+                <strong>0 Assignment Pending</strong>
+              </a>
+              <a class="stat-tile" href="#">
+                <span class="tile-icon material-symbols-outlined">person_off</span>
+                <strong>0 Staff On Leave Today</strong>
+              </a>
+            </div>
+
+            <hr />
+
+            <section class="simple-section">
+              <h2>Today's Timetable</h2>
+              <div class="empty-state">
+                <span class="material-symbols-outlined">event_busy</span>
+                <strong>No Classes Today</strong>
+              </div>
+            </section>
+
+            <section class="simple-section">
+              <h2>Subject-wise Attendance Summary</h2>
+              <div class="summary-row">
+                <span>Business Law</span>
+                <strong>36.47%</strong>
+              </div>
+            </section>
+          </section>
+        </main>
+
+        <footer class="erp-footer">Copyright © 2026. All rights reserved by UniOne ERP Solutions.</footer>
+      </div>
+    </div>
+  </body>
+</html>

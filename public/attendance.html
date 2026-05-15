@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance - Shivaji College ERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="erp-layout">
+      <aside class="erp-sidebar">
+        <a class="side-brand" href="student-dashboard.html">
+          <span class="mini-seal">AK</span>
+          <span>
+            <strong>Student Portal</strong>
+            <small>Academic Session 2025-26</small>
+          </span>
+        </a>
+        <nav class="side-nav">
+          <a class="active" href="attendance.html"><span class="material-symbols-outlined">calendar_today</span> Step 2 - Attendance</a>
+          <a href="subjects.html"><span class="material-symbols-outlined">menu_book</span> Subjects</a>
+          <a href="internal-assessment.html"><span class="material-symbols-outlined">grade</span> View IA Marks</a>
+        </nav>
+      </aside>
+
+      <div class="erp-main">
+        <header class="erp-topbar">
+          <a class="back-link" href="student-dashboard.html" aria-label="Back to dashboard">Back</a>
+          <div class="top-title">Shivaji College</div>
+          <div class="top-actions">
+            <button type="button" aria-label="Notifications"><span class="material-symbols-outlined">notifications</span></button>
+            <button type="button" aria-label="Settings"><span class="material-symbols-outlined">settings</span></button>
+            <strong>Ayush Kumar</strong>
+          </div>
+        </header>
+
+        <main class="student-content">
+          <section class="student-panel compact">
+            <section class="simple-section first">
+              <h1>Today's Timetable</h1>
+              <div class="empty-state">
+                <span class="material-symbols-outlined">event_busy</span>
+                <strong>No Classes Today</strong>
+              </div>
+            </section>
+
+            <hr />
+
+            <section class="simple-section">
+              <h2>Subject-wise Attendance Summary</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Paper</th>
+                      <th>Total Classes</th>
+                      <th>Present</th>
+                      <th>Attendance</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Business Law</td>
+                      <td>52</td>
+                      <td>19</td>
+                      <td>36.47%</td>
+                      <td><span class="pill danger">Below 75%</span></td>
+                    </tr>
+                    <tr>
+                      <td>Financial Accounting</td>
+                      <td>48</td>
+                      <td>39</td>
+                      <td>81.25%</td>
+                      <td><span class="pill success">Eligible</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+        </main>
+
+        <footer class="erp-footer">Copyright © 2026. All rights reserved by UniOne ERP Solutions.</footer>
+      </div>
+    </div>
+  </body>
+</html>

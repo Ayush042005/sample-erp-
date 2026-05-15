@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Assessment - Shivaji College ERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="erp-layout">
+      <aside class="erp-sidebar">
+        <a class="side-brand" href="student-dashboard.html">
+          <span class="mini-seal">AK</span>
+          <span>
+            <strong>Student Portal</strong>
+            <small>Academic Session 2025-26</small>
+          </span>
+        </a>
+        <nav class="side-nav">
+          <a href="attendance.html"><span class="material-symbols-outlined">calendar_today</span> Step 2 - Attendance</a>
+          <a href="subjects.html"><span class="material-symbols-outlined">menu_book</span> Subjects</a>
+          <a class="active" href="internal-assessment.html"><span class="material-symbols-outlined">grade</span> View IA Marks</a>
+        </nav>
+      </aside>
+
+      <div class="erp-main">
+        <header class="erp-topbar">
+          <a class="back-link" href="student-dashboard.html" aria-label="Back to dashboard">Back</a>
+          <div class="top-title">Shivaji College</div>
+          <div class="top-actions">
+            <button type="button" aria-label="Notifications"><span class="material-symbols-outlined">notifications</span></button>
+            <button type="button" aria-label="Settings"><span class="material-symbols-outlined">settings</span></button>
+            <strong>Ayush Kumar</strong>
+          </div>
+        </header>
+
+        <main class="student-content">
+          <section class="report-panel">
+            <h1>INTERNAL ASSESSMENT REPORT</h1>
+
+            <div class="report-filters">
+              <label>
+                Academic Year<span>*</span>
+                <select>
+                  <option>2025-2026</option>
+                  <option>2024-2025</option>
+                </select>
+              </label>
+              <label>
+                Session<span>*</span>
+                <select>
+                  <option>Jan - May</option>
+                  <option>Jul - Dec</option>
+                </select>
+              </label>
+              <label>
+                Semester<span>*</span>
+                <select>
+                  <option>4</option>
+                  <option>3</option>
+                  <option>2</option>
+                </select>
+              </label>
+              <button class="primary-button find-button" type="button">Find</button>
+            </div>
+
+            <p class="report-warning">
+              (In case of any discrepancy in the marks OR Not Marked status. Please contact your subject teacher only.)
+            </p>
+
+            <div class="table-wrap">
+              <table class="ia-report-table">
+                <thead>
+                  <tr>
+                    <th>S.No.</th>
+                    <th>Subject</th>
+                    <th>Lecture Marks</th>
+                    <th>Practical Marks</th>
+                    <th>Tutorial Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>BASIC IT TOOLS (L - 0, P - 2, T - 0)</td>
+                    <td>N/A</td>
+                    <td>Not Marked</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>BUSINESS STATISTICS (L - 3, P - 1, T - 0)</td>
+                    <td>22/30</td>
+                    <td>View Restricted</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>COST ACCOUNTING (L - 3, P - 0, T - 1)</td>
+                    <td>22/30</td>
+                    <td>N/A</td>
+                    <td>Not Marked</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>DIGITAL EMPOWERMENT (L - 0, P - 2, T - 0)</td>
+                    <td>N/A</td>
+                    <td>View Restricted</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>INTERNATIONAL BUSINESS (L - 3, P - 0, T - 1)</td>
+                    <td>Not Marked</td>
+                    <td>N/A</td>
+                    <td>Not Marked</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>INTRODUCTION TO WEB PROGRAMMING (L - 3, P - 1, T - 0)</td>
+                    <td>23/30</td>
+                    <td>Not Marked</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Jansanchar aur Rachnatmak Lekhan (Hindi B) (L - 2, P - 0, T - 0)</td>
+                    <td>Not Marked</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="report-note">Note: Marks will not be displayed for subjects that having only practical component.</p>
+          </section>
+        </main>
+
+        <footer class="erp-footer">Copyright © 2026. All rights reserved by UniOne ERP Solutions.</footer>
+      </div>
+    </div>
+  </body>
+</html>
