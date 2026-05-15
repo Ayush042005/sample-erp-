@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subjects - Shivaji College ERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="erp-layout">
+      <aside class="erp-sidebar">
+        <a class="side-brand" href="student-dashboard.html">
+          <span class="mini-seal">AK</span>
+          <span>
+            <strong>Student Portal</strong>
+            <small>Academic Session 2025-26</small>
+          </span>
+        </a>
+        <nav class="side-nav subject-nav">
+          <a href="attendance.html"><span class="material-symbols-outlined">calendar_today</span> Step 2 - Attendance</a>
+          <a class="active open" href="subjects.html"><span class="material-symbols-outlined">menu_book</span> Subjects</a>
+          <a class="sub-active" href="subjects.html"><i></i> Approved</a>
+          <a href="internal-assessment.html"><span class="material-symbols-outlined">grade</span> View IA Marks</a>
+        </nav>
+      </aside>
+
+      <div class="erp-main">
+        <header class="erp-topbar">
+          <a class="back-link" href="student-dashboard.html" aria-label="Back to dashboard">Back</a>
+          <div class="top-title">Shivaji College</div>
+          <div class="top-actions">
+            <button type="button" aria-label="Notifications"><span class="material-symbols-outlined">notifications</span></button>
+            <button type="button" aria-label="Settings"><span class="material-symbols-outlined">settings</span></button>
+            <strong>Ayush Kumar</strong>
+          </div>
+        </header>
+
+        <main class="subjects-page">
+          <h1>My Subjects</h1>
+
+          <section class="subjects-panel">
+            <div class="subject-filter">
+              <label>
+                Semester
+                <select>
+                  <option>4</option>
+                  <option>3</option>
+                  <option>2</option>
+                </select>
+              </label>
+              <button class="find-dark" type="button">Find</button>
+            </div>
+
+            <div class="table-tools">
+              <div class="export-buttons" aria-label="Export options">
+                <button>Copy</button>
+                <button>Excel</button>
+                <button>PDF</button>
+                <button>Print</button>
+              </div>
+              <label class="entries-control">
+                Show
+                <select>
+                  <option>20</option>
+                  <option>10</option>
+                  <option>50</option>
+                </select>
+                entries
+              </label>
+              <label class="search-control">
+                Search:
+                <input type="search" />
+              </label>
+            </div>
+
+            <div class="table-wrap">
+              <table class="subjects-table">
+                <thead>
+                  <tr>
+                    <th>S.No.</th>
+                    <th>Paper Type</th>
+                    <th>Subjects</th>
+                    <th>Discipline Type</th>
+                    <th>Credits</th>
+                    <th>Allotment Date/Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Skill Enhancement Course</td>
+                    <td><strong>( UPC : 2346000005)</strong> BASIC IT TOOLS</td>
+                    <td>-</td>
+                    <td>Lecture - 0, Practical - 2, Tutorial - 0</td>
+                    <td>29/Apr/2026 12:34:38</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Discipline Specific Course</td>
+                    <td>
+                      <strong>( UPC : 2412082401)</strong> BUSINESS STATISTICS (Section : NONE)<br />
+                      <strong>( UPC : 2412082402)</strong> COST ACCOUNTING (Section : A)<br />
+                      <strong>( UPC : 2412082403)</strong> INTERNATIONAL BUSINESS (Section : A)
+                    </td>
+                    <td>-<br />-<br />-</td>
+                    <td>
+                      Lecture - 3, Practical - 1, Tutorial - 0<br />
+                      Lecture - 3, Practical - 0, Tutorial - 1<br />
+                      Lecture - 3, Practical - 0, Tutorial - 1
+                    </td>
+                    <td>
+                      29/Apr/2026 12:35:17<br />
+                      29/Apr/2026 12:37:16<br />
+                      29/Apr/2026 13:52:02
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Value Added Course</td>
+                    <td><strong>( UPC : 6967000027)</strong> DIGITAL EMPOWERMENT (Section : VAC-DE)</td>
+                    <td>-</td>
+                    <td>Lecture - 0, Practical - 2, Tutorial - 0</td>
+                    <td>29/Apr/2026 12:38:04</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Generic Elective</td>
+                    <td><strong>( UPC : 2344002004)</strong> INTRODUCTION TO WEB PROGRAMMING (Section : A)</td>
+                    <td>-</td>
+                    <td>Lecture - 3, Practical - 1, Tutorial - 0</td>
+                    <td>29/Apr/2026 13:52:08</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Ability Enhancement Course</td>
+                    <td><strong>( UPC : 2051002002)</strong> Jansanchar aur Rachnatmak Lekhan (Hindi B)</td>
+                    <td>-</td>
+                    <td>Lecture - 2, Practical - 0, Tutorial - 0</td>
+                    <td>29/Apr/2026 13:53:08</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-footer">
+              <span>Showing 1 to 5 of 5 entries</span>
+              <div class="pagination">
+                <button>Prev</button>
+                <button class="current">1</button>
+                <button>Next</button>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="erp-footer">Copyright © 2026. All rights reserved by UniOne ERP Solutions.</footer>
+      </div>
+    </div>
+  </body>
+</html>
