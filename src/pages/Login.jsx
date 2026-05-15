@@ -39,6 +39,7 @@ const Login = () => {
           </form>
         </section>
       </main>
+      <footer className="erp-footer">Copyright © 2026. All rights reserved by Ayush Kumar.</footer>
     </div>
   );
 };
